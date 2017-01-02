@@ -1,6 +1,6 @@
 package com.designpatterns.creational.builder;
 
-public class LunchOrder {
+public class Subway {
 
 	public static class Builder{
 		private String bread;
@@ -16,8 +16,8 @@ public class LunchOrder {
 					
 		}
 		
-		public LunchOrder build(){
-			return new LunchOrder(this);
+		public Subway build(){
+			return new Subway(this);
 		}
 
 		
@@ -45,7 +45,7 @@ public class LunchOrder {
 	private String dressing;
 	private String meat;
 	
-	private LunchOrder(Builder builder){
+	private Subway(Builder builder){
 		  this.bread=builder.bread;
 		  this.condiments=builder.condiments;
 		  this.dressing=builder.dressing;

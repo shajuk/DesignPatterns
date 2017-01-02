@@ -1,5 +1,5 @@
 package com.designpatterns.creational.factory;
 
-public class AboutPage extends Page{
+public class Tubelights extends Item {
 
 }

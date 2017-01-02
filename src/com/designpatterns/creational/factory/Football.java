@@ -1,5 +1,5 @@
 package com.designpatterns.creational.factory;
 
-public class CartPage extends Page{
+public class Football extends Item {
 
 }

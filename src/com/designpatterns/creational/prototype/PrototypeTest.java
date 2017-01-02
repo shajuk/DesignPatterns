@@ -6,33 +6,23 @@ import java.text.NumberFormat;
 public class PrototypeTest {
 	
 	public static void main(String[] args) {
-		Registry itemRegistry=new Registry();
-		Movie movie1=(Movie)itemRegistry.createItem(ItemType.MOVIE);
-		movie1.setName("Sulthan");
-		movie1.setPrice(new BigDecimal(100));
-		movie1.setRuntime("2.5 Hours");
+		EmployeeRegistry employeeRegistry=new EmployeeRegistry();
+		PermanentEmployee e1=(PermanentEmployee)employeeRegistry.createEmployee(EmploymentType.PERMANENT);
+		e1.setEmployeeId("0001");
+		e1.setName("Harish");
+		e1.setDateJoining("04-15-2010");
+		e1.setPermanentIdNo("11");
 		
-		Movie movie2=(Movie)itemRegistry.createItem(ItemType.MOVIE);
-		movie1.setName("Two States");
-		movie1.setPrice(new BigDecimal(50));
-		movie1.setRuntime("2 Hours");
+		PermanentEmployee e2=(PermanentEmployee)employeeRegistry.createEmployee(EmploymentType.PERMANENT);
+		e2.setEmployeeId("0002");
+		e2.setName("Renjith");
+		e2.setDateJoining("04-15-2008");
+		e2.setPermanentIdNo("04");
 		
-
-
-		System.out.println(movie1.equals(movie2));
+		System.out.println(e1.equals(e2));
 		System.out.println();
 		
-		VehicleRegistry vReg=new VehicleRegistry();
-		Car c=(Car)vReg.registerVehicle(ItemType.CAR);
-		c.setBrandName("Swift");
-		c.setPrice(500000);
-		Car c1=(Car)vReg.registerVehicle(ItemType.CAR);
-		c1.setBrandName("Hundayi");
-		c1.setPrice(400000);
-		System.out.println(c);
-		System.out.println(c1);
-		System.out.println(c==c1);
-		NumberFormat x;
+	
 		
 	}
 

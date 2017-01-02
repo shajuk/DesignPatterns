@@ -1,5 +1,5 @@
 package com.designpatterns.creational.factory;
 
-public class SearchPage extends Page{
+public class Television extends Item {
 
 }

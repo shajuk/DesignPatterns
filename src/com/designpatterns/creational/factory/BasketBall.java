@@ -1,5 +1,5 @@
 package com.designpatterns.creational.factory;
 
-public abstract class Page {
+public class BasketBall extends Item {
 
 }
